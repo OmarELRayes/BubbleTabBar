@@ -52,7 +52,7 @@ internal fun ImageView.setColorStateListAnimator(
 }
 
 
-var DURATION = 350L
+var DURATION = 200L
 var ALPHA = 0.15f
 internal fun TextView.expand(container: LinearLayout, iconColor: Int, cornerRadius: Float) {
     val bounds = Rect()

@@ -40,7 +40,7 @@ class Bubble(context: Context, private var item: MenuItem) : FrameLayout(context
 
         container.apply {
             layoutParams =
-                LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT).apply {
+                LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT).apply {
                     setPadding(dpAsPixels, dpAsPixelsVertical, dpAsPixels, dpAsPixelsVertical)
                     gravity = Gravity.CENTER
                 }
@@ -64,6 +64,7 @@ class Bubble(context: Context, private var item: MenuItem) : FrameLayout(context
             }
         }
         title.apply {
+            includeFontPadding = false
             layoutParams =
                 LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT).apply {
                     setPaddingRelative(dpAsIconPadding, 0, 0, 0)
